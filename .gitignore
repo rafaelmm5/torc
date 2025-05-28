@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TorcLibrary/.vs
+/TorcLibrary/LibraryAPI/bin/Debug/net9.0
+/TorcLibrary/LibraryAPI/obj
+/TorcLibrary/LibraryRepository/obj
+/TorcLibrary/LibrarySearchService/obj
+/TorcLibrary/LibraryCommon/bin/Debug/net9.0
+/TorcLibrary/LibraryCommon/obj
+/TorcLibrary/LibraryData/bin/Debug/net9.0
+/TorcLibrary/LibraryData/obj
+/TorcLibrary/LibraryRepository/bin/Debug/net9.0
+/TorcLibrary/LibrarySearchService/bin/Debug/net9.0
