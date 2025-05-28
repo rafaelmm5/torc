@@ -19,7 +19,7 @@ namespace LibraryAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetBooks(string? author, string? isbn, string? ownershipStatus, int offset = 0, int limit = 5)
         {
-            return Ok(await _bookSearchService.GetBookByQuery("", "", "", offset, limit));
+            return Ok(await _bookSearchService.GetBookByQuery(author, isbn, ownershipStatus, offset, limit));
         }
     }
 }
