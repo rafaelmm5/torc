@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibraryAPI.Controllers
 {
 
-    [Route("orders")]
+    [Route("books")]
     [ApiController]
     public class BookController : Controller
     {

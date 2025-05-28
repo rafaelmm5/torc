@@ -11,6 +11,11 @@ builder.Configuration.Bind(appSettings);
 // Add services to the container.
 builder.Services.AddSearchService(appSettings);
 
+builder.Services.AddCors(opt => 
+{
+    opt.AddPolicy("UIOrigin", builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+});
+
 builder.Services.AddControllers();
 
 // Add swagger services
@@ -21,6 +26,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
+app.UseCors("UIOrigin");
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
